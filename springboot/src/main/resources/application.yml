@@ -1,0 +1,34 @@
+server: 
+  port: 8080
+  servlet: 
+    context-path: /boot
+  
+spring: 
+  datasource: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ENC(m8XKeSwCgs/lEXHzU0kWpApYzXgAQz41zbOG0FbJroLHuH/eqd3Rj32iNfsi0j4s)
+    username: ENC(S2phqritpFPr3/IQwM4tjg==)
+    password: ENC(nh76zEJkKlAS2yn+pJgEjA==)
+
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+    
+mybatis:
+  type-aliases-package: com.cssl.pojo
+  configuration-properties: 
+    auto-mapping-behavior: full
+    use-generated-keys: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    
+    
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  pageSizeZero: true
+  
+jasypt:
+  encryptor:
+    password: EbfYkitulv73I2
+   
